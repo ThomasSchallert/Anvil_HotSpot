@@ -180,7 +180,7 @@ if __name__ == "__main__":
     Hauptprogramm zur Initialisierung und Steuerung.
     """
     try:
-        controller = AlvikWebController("iPhone von Jannik", "Lajani17-LTE")
+        controller = AlvikWebController("", "") # Hotspot-Name und Passwort hier einfügen
         ip_address = controller.connect_to_wifi()
         controller.start_web_server(ip_address)
     except KeyboardInterrupt:

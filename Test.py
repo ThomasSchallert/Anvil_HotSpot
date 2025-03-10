@@ -1,7 +1,7 @@
 import alvikController as ac
 import requests
 
-controller = ac.AlvikController("iPhone von Jannik", "Lajani17-LTE")
+controller = ac.AlvikController("", "") # Hotspot-Name und Passwort hier einfügen
 
 if controller.connect_to_wifi():
     print("Roboter verbunden. IP-Adresse:", controller.ip_address)
