@@ -162,10 +162,10 @@ class AlvikWebController:
           self.alvik.move(-distance, blocking=False, unit = Unit)
       elif direction == 'left':
           print(f"Rotate left by {distance}")
-          self.alvik.rotate(distance, blocking=False, unit = Unit)
+          self.alvik.rotate(distance, blocking=False)
       elif direction == 'right':
           print(f"Rotate right by {distance}")
-          self.alvik.rotate(-distance, blocking=False, unit = Unit)
+          self.alvik.rotate(-distance, blocking=False)
 
     def stop(self):
         """!
